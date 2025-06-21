@@ -2,108 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>eonapps | Smart School & Parent Apps</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VIBHA ERUDITE | Excellence in Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      background: linear-gradient(to bottom right, #3b82f6, #1e3a8a);
       color: #fff;
+      min-height: 100vh;
     }
-
     header {
-      padding: 2rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
-
-    h1 {
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
       margin-bottom: 0.5rem;
     }
-
-    p {
+    header p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
+      font-weight: 400;
     }
-
-    .cta {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #fff;
-      color: #3b82f6;
-      font-weight: bold;
-      border-radius: 8px;
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 12px;
+    }
+    nav a {
+      color: #fff;
       text-decoration: none;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-
-    .cta:hover {
-      background-color: #e0e7ff;
+    nav a:hover {
+      color: #cbd5e1;
     }
-
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
     footer {
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
-      background: rgba(255, 255, 255, 0.1);
-      margin-top: 2rem;
-    }
-
-    .features {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      padding: 0 2rem;
-      max-width: 800px;
-      margin: 2rem auto;
-    }
-
-    .feature {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 1.5rem;
-    }
-
-    .feature h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-    }
-
-    @media (min-width: 600px) {
-      .features {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+      background-color: rgba(0,0,0,0.2);
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Welcome to EON Apps</h1>
-    <p>Smart Solutions for Schools & Parents</p>
-    <a href="mailto:contact@eonapps.xyz" class="cta">Get in Touch</a>
+    <h1>VIBHA ERUDITE</h1>
+    <p>Empowering Minds, Enlightening Futures</p>
   </header>
 
-  <section class="features">
-    <div class="feature">
-      <h2>📱 Parent App</h2>
-      <p>Real-time attendance, homework, and school updates in one place.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#academics">Academics</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section>
+    <div class="card" id="about">
+      <h2>About Our School</h2>
+      <p>At VIBHA ERUDITE, we are committed to nurturing young minds through a dynamic blend of academic excellence, values, and innovation. We foster a learning environment that encourages curiosity, creativity, and critical thinking.</p>
     </div>
-    <div class="feature">
-      <h2>🎓 School Portal</h2>
-      <p>Efficient student management and instant communication tools.</p>
+
+    <div class="card" id="academics">
+      <h2>Academic Programs</h2>
+      <p>Our curriculum balances rigorous academics with co-curricular activities to promote holistic development. From early childhood education to secondary school, we offer personalized guidance and mentorship.</p>
     </div>
-    <div class="feature">
-      <h2>🔐 Secure & Reliable</h2>
-      <p>Cloud-based with daily backups and encrypted data storage.</p>
+
+    <div class="card" id="admissions">
+      <h2>Admissions Open</h2>
+      <p>We welcome students from all backgrounds. Join us in shaping a brighter future. Contact our admissions office to learn more about the enrollment process for the 2025–2026 academic year.</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@vibhaerudite.edu.in<br>Phone: +91 98765 43210<br>Address: VIBHA ERUDITE, Knowledge Park, Hyderabad</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 eonapps.xyz | All rights reserved
+    &copy; 2025 VIBHA ERUDITE. All rights reserved.
   </footer>
 
 </body>
