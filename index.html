@@ -1,16 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>EonApps Coming Soon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eonapps | Smart School & Parent Apps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    body { text-align: center; font-family: sans-serif; background: #f7f7f7; padding-top: 100px; }
-    h1 { font-size: 2.5rem; color: #333; }
-    p { font-size: 1.2rem; color: #666; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: #fff;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #fff;
+      color: #3b82f6;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #e0e7ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(255, 255, 255, 0.1);
+      margin-top: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .feature h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 600px) {
+      .features {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>EonApps.xyz</h1>
-  <p>We're building something amazing. Stay tuned!</p>
+
+  <header>
+    <h1>Welcome to EON Apps</h1>
+    <p>Smart Solutions for Schools & Parents</p>
+    <a href="mailto:contact@eonapps.xyz" class="cta">Get in Touch</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h2>📱 Parent App</h2>
+      <p>Real-time attendance, homework, and school updates in one place.</p>
+    </div>
+    <div class="feature">
+      <h2>🎓 School Portal</h2>
+      <p>Efficient student management and instant communication tools.</p>
+    </div>
+    <div class="feature">
+      <h2>🔐 Secure & Reliable</h2>
+      <p>Cloud-based with daily backups and encrypted data storage.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 eonapps.xyz | All rights reserved
+  </footer>
+
 </body>
 </html>
