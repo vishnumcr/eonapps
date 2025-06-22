@@ -4,103 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VIBHA ERUDITE | Excellence in Education</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
   <style>
-    :root {
-      --primary: #3b82f6;
-      --dark: #1e3a8a;
-      --light: #f9fafb;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth;
     }
-
     body {
       font-family: 'Inter', sans-serif;
-      color: #1e293b;
-      background-color: var(--light);
+      background: linear-gradient(to bottom right, #3b82f6, #1e3a8a);
+      color: #fff;
+      min-height: 100vh;
     }
-
     header {
-      background: linear-gradient(to bottom right, var(--primary), var(--dark));
-      color: white;
-      padding: 4rem 2rem;
       text-align: center;
+      padding: 3rem 1rem;
     }
-
     header h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 800;
+      margin-bottom: 0.5rem;
     }
-
     header p {
       font-size: 1.2rem;
-      margin-top: 1rem;
+      font-weight: 400;
     }
-
     nav {
+      background-color: rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: center;
-      background-color: white;
-      padding: 1rem 0;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      gap: 2rem;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 12px;
     }
-
     nav a {
-      margin: 0 1rem;
-      color: var(--dark);
+      color: #fff;
       text-decoration: none;
       font-weight: 600;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
-
     nav a:hover {
-      color: var(--primary);
+      color: #cbd5e1;
     }
-
     section {
       padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
     }
-
-    .section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--dark);
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(8px);
+    }
+    .card h2 {
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      margin-top: 1rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
     }
-
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: var(--dark);
-      color: white;
+      font-size: 0.9rem;
+      background-color: rgba(0,0,0,0.2);
       margin-top: 3rem;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      nav {
-        flex-wrap: wrap;
-      }
     }
   </style>
 </head>
@@ -108,7 +81,7 @@
 
   <header>
     <h1>VIBHA ERUDITE</h1>
-    <p>Empowering Minds. Shaping the Future.</p>
+    <p>Empowering Minds, Enlightening Futures</p>
   </header>
 
   <nav>
@@ -118,33 +91,25 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2 class="section-title">About Us</h2>
-    <div class="card">
-      <p>VIBHA ERUDITE is dedicated to delivering high-quality education in a nurturing environment. Our mission is to inspire students to become lifelong learners, ethical citizens, and innovative leaders.</p>
+  <section>
+    <div class="card" id="about">
+      <h2>About Our School</h2>
+      <p>At VIBHA ERUDITE, we are committed to nurturing young minds through a dynamic blend of academic excellence, values, and innovation. We foster a learning environment that encourages curiosity, creativity, and critical thinking.</p>
     </div>
-  </section>
 
-  <section id="academics">
-    <h2 class="section-title">Academic Excellence</h2>
-    <div class="card">
-      <p>Our curriculum blends academic rigor with hands-on learning and co-curricular development. From foundational subjects to advanced skill-building programs, we support every child’s journey toward excellence.</p>
+    <div class="card" id="academics">
+      <h2>Academic Programs</h2>
+      <p>Our curriculum balances rigorous academics with co-curricular activities to promote holistic development. From early childhood education to secondary school, we offer personalized guidance and mentorship.</p>
     </div>
-  </section>
 
-  <section id="admissions">
-    <h2 class="section-title">Admissions</h2>
-    <div class="card">
-      <p>We welcome families to be part of the VIBHA ERUDITE community. Admissions for the 2025–2026 session are now open. Join a learning environment where every child matters and every achievement is celebrated.</p>
+    <div class="card" id="admissions">
+      <h2>Admissions Open</h2>
+      <p>We welcome students from all backgrounds. Join us in shaping a brighter future. Contact our admissions office to learn more about the enrollment process for the 2025–2026 academic year.</p>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:info@vibhaerudite.edu.in">info@vibhaerudite.edu.in</a><br>
-         Phone: +91 98765 43210<br>
-         Address: VIBHA ERUDITE, Knowledge Park, Hyderabad</p>
+    <div class="card" id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@vibhaerudite.edu.in<br>Phone: +91 98765 43210<br>Address: VIBHA ERUDITE, Knowledge Park, Hyderabad</p>
     </div>
   </section>
 
