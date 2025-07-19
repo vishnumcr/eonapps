@@ -3,110 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Her Astra – Women's Safety Device</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+  <title>Smart School Apps - Empowering Schools & Parents</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: 'Urbanist', sans-serif;
-      background: #f8f9fc;
+      background: linear-gradient(135deg, #f5f7fa, #dbe9ff);
       color: #222;
-    }
-    header {
-      background: linear-gradient(to right, #8e2de2, #4a00e0);
-      color: white;
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      max-width: 800px;
-      margin: 10px auto;
       line-height: 1.6;
     }
-    .section {
+
+    header {
+      background: linear-gradient(to right, #004aad, #007bff);
+      color: white;
       padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
     .section h2 {
       text-align: center;
-      color: #4a00e0;
-      margin-bottom: 30px;
-      font-size: 28px;
+      font-size: 32px;
+      color: #003087;
+      margin-bottom: 40px;
     }
-    .grid {
+
+    .features {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
-    .quote {
-      font-style: italic;
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #8e2de2;
-      border-radius: 8px;
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease;
     }
-    .qr {
+
+    .feature:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+      color: #0056b3;
+    }
+
+    .feature p {
+      color: #555;
+    }
+
+    .cta {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 60px;
     }
-    .qr img {
-      width: 160px;
-      margin-bottom: 15px;
+
+    .cta a {
+      text-decoration: none;
+      background: linear-gradient(to right, #007bff, #004aad);
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease;
     }
-    .qr p {
-      font-size: 16px;
-      color: #444;
+
+    .cta a:hover {
+      background: linear-gradient(to right, #0056b3, #002d91);
     }
+
     footer {
-      background: #f0f0f0;
+      background: #f0f4f9;
       padding: 20px;
       text-align: center;
-      color: #666;
+      color: #777;
       font-size: 14px;
-    }
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Smart School Apps</h1>
+    <p>Powerful, Branded App Solutions for Modern Schools and Parents</p>
+  </header>
 
-<header>
-  <h1>Her Voice. Her Astra.</h1>
-  <p>From Sita to Savitribai, our women have fought silently. But now, her safety must not depend on silence. This device is her voice — her protection. Let’s protect her like we protect our dharma — with heart, with pride, with everything.</p>
-</header>
-
-<section class="section">
-  <h2>What We're Building</h2>
-  <div class="grid">
-    <div>
-      <p>We are developing a cutting-edge women's safety device, manufactured in India, for India. A wearable that connects her instantly to help — family, police, and the community. One tap. One alert. One shield of safety.</p>
-      <p class="quote">“One scan, one share, one warrior more.”</p>
+  <div class="section">
+    <h2>What We Offer</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>👨‍👩‍👧 Parent Dashboard</h3>
+        <p>Parents can view attendance, grades, homework, fees, and circulars — all in real-time.</p>
+      </div>
+      <div class="feature">
+        <h3>📊 Admin Control Panel</h3>
+        <p>Let school admins manage student records, daily attendance, announcements, and generate reports effortlessly.</p>
+      </div>
+      <div class="feature">
+        <h3>📢 Instant Notifications</h3>
+        <p>Send alerts for attendance, results, fee reminders, and holidays with OneSignal push notifications integration.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 White-Labeled Apps</h3>
+        <p>Your school's logo, name, and brand colors — we build fully personalized Android apps just for your institution.</p>
+      </div>
     </div>
-    <div>
-      <img src="https://via.placeholder.com/400x280.png?text=Device+Preview" alt="Device Preview" style="width:100%; border-radius:10px;">
+
+    <div class="cta">
+      <a href="mailto:eonvishnu@gmail.com">Request a Free Demo</a>
     </div>
   </div>
-</section>
 
-<section class="section qr">
-  <h2>Support the Mission</h2>
-  <img src="frame.png" alt="Scan QR for Feedback Form" />
-  <p>Scan the QR code to fill our Google Form and help shape the future of women’s safety in India.</p>
-</section>
-
-<footer>
-  Contact us: accento.dt@gmail.com | +91 9069073666<br/>
-  © 2025 Her Astra. Made with purpose in India.
-</footer>
-
+  <footer>
+    © 2025 Smart School Apps. Built with care for schools across India.
+  </footer>
 </body>
 </html>
