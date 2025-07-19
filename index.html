@@ -2,120 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LAVISH SCHOOL | Love With Your Life</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart School Apps - Parent & School Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #3b82f6, #1e3a8a);
-      color: #fff;
-      min-height: 100vh;
+      margin: 0;
+      background: #f9fbfc;
+      color: #333;
     }
     header {
+      background: #0056b3;
+      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 3rem 1rem;
     }
     header h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      margin-bottom: 0.5rem;
+      margin: 0;
+      font-size: 28px;
     }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-    nav {
-      background-color: rgba(255, 255, 255, 0.1);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      margin-top: 1rem;
-      border-radius: 12px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #cbd5e1;
-    }
-    section {
-      padding: 3rem 2rem;
+    .section {
+      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 1rem;
-      backdrop-filter: blur(8px);
+    .section h2 {
+      color: #0056b3;
+      margin-bottom: 16px;
     }
-    .card h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    .card p {
-      font-size: 1rem;
-      line-height: 1.6;
+    .feature {
+      background: white;
+      flex: 1 1 260px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .cta a {
+      background: #007bff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
     }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      background-color: rgba(0,0,0,0.2);
-      margin-top: 3rem;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>LAVISH FOREVER</h1>
-    <p>Empowering Minds, Enlightening Futures</p>
+    <h1>Smart School Apps</h1>
+    <p>Empowering Schools & Parents with Smart Digital Solutions</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#academics">Academics</a>
-    <a href="#admissions">Admissions</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section>
-    <div class="card" id="about">
-      <h2>About Our School</h2>
-      <p>At VIBHA ERUDITE, we are committed to nurturing young minds through a dynamic blend of academic excellence, values, and innovation. We foster a learning environment that encourages curiosity, creativity, and critical thinking.</p>
+  <div class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Parent Login</h3>
+        <p>Let parents track attendance, marks, homework, and fees – all from a single mobile app.</p>
+      </div>
+      <div class="feature">
+        <h3>Admin Dashboard</h3>
+        <p>Powerful backend tools for school admins to manage student data, send notifications, and analyze reports.</p>
+      </div>
+      <div class="feature">
+        <h3>Notifications</h3>
+        <p>Instant alerts for attendance, fee due dates, announcements, and emergencies using push notifications.</p>
+      </div>
+      <div class="feature">
+        <h3>Custom Branding</h3>
+        <p>Your school name, logo, and colors – our apps are fully white-labeled to reflect your identity.</p>
+      </div>
     </div>
 
-    <div class="card" id="academics">
-      <h2>Academic Programs</h2>
-      <p>Our curriculum balances rigorous academics with co-curricular activities to promote holistic development. From early childhood education to secondary school, we offer personalized guidance and mentorship.</p>
+    <div class="cta">
+      <a href="mailto:youremail@example.com">Request a Demo</a>
     </div>
-
-    <div class="card" id="admissions">
-      <h2>Admissions Open</h2>
-      <p>We welcome students from all backgrounds. Join us in shaping a brighter future. Contact our admissions office to learn more about the enrollment process for the 2025–2026 academic year.</p>
-    </div>
-
-    <div class="card" id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: info@vibhaerudite.edu.in<br>Phone: +91 98765 43210<br>Address: VIBHA ERUDITE, Knowledge Park, Hyderabad</p>
-    </div>
-  </section>
+  </div>
 
   <footer>
-    &copy; 2025 VIBHA ERUDITE. All rights reserved.
+    © 2025 Smart School Apps. All rights reserved.
   </footer>
-
 </body>
 </html>
